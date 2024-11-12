@@ -33,6 +33,14 @@ public class Estudiante {
     @Column(nullable = false)
     private int edad;
 
+    //Columna Escuela (Clave Foranea)
+    //Esto se vincula con la clase escuela.java
+    @ManyToOne
+    @JoinColumn(name = "escuela_id", nullable = false)
+    private Escuela escuela;
+
+    
+
     public int getId() {
         return id;
     }
@@ -79,6 +87,14 @@ public class Estudiante {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public Escuela getEscuela() {
+        return escuela;
+    }
+
+    public void setEscuela(Escuela escuela) {
+        this.escuela = escuela;
     }
 
     
