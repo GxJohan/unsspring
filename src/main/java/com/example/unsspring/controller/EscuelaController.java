@@ -32,4 +32,10 @@ public class EscuelaController {
         return ResponseEntity.notFound().build();
     }
 
+    //Create
+
+    //Update
+    
+    ///Delete
+
 }
